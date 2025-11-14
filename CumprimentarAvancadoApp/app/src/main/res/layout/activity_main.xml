@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/light_lidl"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/text_titulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="50dp"
+        android:fontFamily="cursive"
+        android:gravity="center"
+        android:text="Aplicação Simpática do Lidl"
+        android:textSize="30sp"
+        android:textColor="@color/azulao"/>
+
+    <EditText
+        android:id="@+id/edit_primeiro_nome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="25dp"
+        android:gravity="center"
+        android:hint="Primeiro Nome" />
+
+    <EditText
+        android:id="@+id/edit_apelido"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="50dp"
+        android:gravity="center"
+        android:hint="Apelido" />
+
+    <LinearLayout
+        android:id="@+id/layout_menu_botoes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button_manha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/azulao"
+            android:text="MANHÃ" />
+
+        <Button
+            android:id="@+id/button_tarde"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:backgroundTint="@color/red_lidl"
+            android:text="TARDE" />
+
+        <Button
+            android:id="@+id/button_noite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/azulao"
+            android:text="NOITE" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/text_cumprimento"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="300dp"
+        android:gravity="center"
+        android:text="Desenvolvido por Vitor"
+        android:textColor="@color/azulao"
+        android:textSize="10dp" />
+
+
+</LinearLayout>
