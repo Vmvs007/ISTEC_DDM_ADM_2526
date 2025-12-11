@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="gambling_grey">#2A2A2A</color>
+    <color name="mega_gambling_grey">#181818</color>
+    <color name="hint_grey">#949494</color>
+    <color name="fire_red">#911406</color>
+    <color name="credit_yellow">#FFB000</color>
+    <color name="free_green">#6FFF5A</color>
+    <color name="dollar_green">#27781C</color>
+</resources>

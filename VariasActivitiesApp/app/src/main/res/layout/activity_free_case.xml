@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/fire_red"
+    tools:context=".FreeCaseActivity">
+
+    <LinearLayout
+        android:id="@+id/layout_cabecalho"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="75dp"
+        android:background="@color/mega_gambling_grey"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/text_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:layout_marginBottom="10dp"
+            android:textSize="16dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginStart="25dp"
+            android:text="quimCsMaster64"/>
+
+        <TextView
+            android:id="@+id/text_credits"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/credit_yellow"
+            android:layout_marginBottom="10dp"
+            android:layout_marginStart="25dp"
+            android:textSize="16dp"
+            android:gravity="end"
+
+            android:layout_marginEnd="25dp"
+            android:text="250 C"/>
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/layout_header_buttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button_return"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="RETURN"
+            android:backgroundTint="@color/gambling_grey"
+            android:padding="20dp"
+            app:cornerRadius="0dp"
+            android:layout_weight="1"
+            />
+        <Button
+            android:id="@+id/button_add_funds"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ADD FUNDS"
+            android:backgroundTint="@color/credit_yellow"
+            android:padding="20dp"
+            app:cornerRadius="0dp"
+            android:layout_weight="1"
+            />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/image_spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="300dp"
+        android:layout_marginTop="100dp"
+        app:srcCompat="@drawable/spinner" />
+
+    <Button
+        android:id="@+id/button_open_case"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="OPEN FREE CASE"
+        android:backgroundTint="@color/dollar_green"
+        android:textColor="@color/white"
+        app:cornerRadius="0dp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-black"
+        android:textSize="25sp"
+        android:padding="20dp"
+        />
+
+    <LinearLayout
+        android:id="@+id/layout_bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="140dp"
+        android:orientation="horizontal"
+        android:background="@color/mega_gambling_grey">
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
