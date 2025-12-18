@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/capybara_yellow"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/text_boas_vindas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:fontFamily="@font/bangers"
+        android:gravity="center"
+        android:background="@color/capybara_purple"
+        android:text="BEM-VINDO AO CAPYBARA RNG"
+        android:textColor="@color/white"
+        android:paddingTop="10dp"
+        android:textSize="35sp" />
+
+
+    <TextView
+        android:id="@+id/text_instrucoes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Faça login para avançar"
+        android:gravity="center"
+        android:fontFamily="@font/bangers"
+        android:background="@color/capybara_purple"
+        android:textColor="@color/white"
+        android:paddingBottom="20dp"
+        android:textSize="22sp"
+        />
+
+    <EditText
+        android:id="@+id/edit_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginTop="50dp"
+        android:hint="Username"/>
+
+    <EditText
+        android:id="@+id/edit_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:hint="Password"
+        android:layout_marginTop="5dp"
+        android:inputType="textPassword"/>
+
+    <Button
+        android:id="@+id/button_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="LET'S GO CAPYBARA"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginTop="25dp"
+        android:fontFamily="@font/bangers"
+
+        android:textSize="35sp"
+        android:gravity="center"
+        android:padding="10dp"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/capybara_purple"/>
+
+</LinearLayout>
