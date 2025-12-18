@@ -76,10 +76,11 @@ class VendingActivity : AppCompatActivity() {
                     var randomCapybara = R.drawable.capybara_01
 
                     if (categoriaAleatoria >= 1 && categoriaAleatoria <= 70) { // DAILY
-                        randomCapybara = when (Random.nextInt(5)) {
+                        randomCapybara = when (Random.nextInt(4)) {
                             0 -> R.drawable.capybara_01
                             1 -> R.drawable.capybara_daily_01
-                            else -> R.drawable.capybara_daily_02
+                            2 -> R.drawable.capybara_daily_02
+                            else-> R.drawable.capybara_daily_03
 
                         }
                         Toast.makeText(this, "Ganhaste uma capivara Daily!", Toast.LENGTH_LONG)
@@ -87,7 +88,7 @@ class VendingActivity : AppCompatActivity() {
                     }
 
                     if (categoriaAleatoria >= 71 && categoriaAleatoria <= 94) { // COMMON
-                        randomCapybara = when (Random.nextInt(8)) {
+                        randomCapybara = when (Random.nextInt(10)) {
                             0 -> R.drawable.capybara_01
                             1 -> R.drawable.capybara_comum_01
                             2 -> R.drawable.capybara_comum_02
@@ -95,7 +96,9 @@ class VendingActivity : AppCompatActivity() {
                             4 -> R.drawable.capybara_comum_04
                             5 -> R.drawable.capybara_comum_05
                             6 -> R.drawable.capybara_comum_06
-                            else -> R.drawable.capybara_comum_07
+                            7 -> R.drawable.capybara_comum_07
+                            8 -> R.drawable.capybara_comum_08
+                           else-> R.drawable.capybara_comum_09
                         }
                         Toast.makeText(this, "Ganhaste uma capivara Common!", Toast.LENGTH_LONG)
                             .show()
@@ -174,17 +177,18 @@ class VendingActivity : AppCompatActivity() {
                 var randomCapybara = R.drawable.capybara_01
 
                 if (categoriaAleatoria >= 1 && categoriaAleatoria <= 10) { // DAILY
-                    randomCapybara = when (Random.nextInt(5)) {
+                    randomCapybara = when (Random.nextInt(4)) {
                         0 -> R.drawable.capybara_01
                         1 -> R.drawable.capybara_daily_01
-                        else -> R.drawable.capybara_daily_02
+                        2 -> R.drawable.capybara_daily_02
+                        else-> R.drawable.capybara_daily_03
 
                     }
                     Toast.makeText(this, "Ganhaste uma capivara Daily!", Toast.LENGTH_LONG).show()
                 }
 
                 if (categoriaAleatoria >= 11 && categoriaAleatoria <= 80) { // COMMON
-                    randomCapybara = when (Random.nextInt(8)) {
+                    randomCapybara = when (Random.nextInt(10)) {
                         0 -> R.drawable.capybara_01
                         1 -> R.drawable.capybara_comum_01
                         2 -> R.drawable.capybara_comum_02
@@ -192,7 +196,9 @@ class VendingActivity : AppCompatActivity() {
                         4 -> R.drawable.capybara_comum_04
                         5 -> R.drawable.capybara_comum_05
                         6 -> R.drawable.capybara_comum_06
-                        else -> R.drawable.capybara_comum_07
+                        7 -> R.drawable.capybara_comum_07
+                        8 -> R.drawable.capybara_comum_08
+                        else-> R.drawable.capybara_comum_09
                     }
                     Toast.makeText(this, "Ganhaste uma capivara Common!", Toast.LENGTH_LONG).show()
                 }
@@ -263,17 +269,18 @@ class VendingActivity : AppCompatActivity() {
                 var randomCapybara = R.drawable.capybara_01
 
                 if (categoriaAleatoria >= 1 && categoriaAleatoria <= 5) { // DAILY
-                    randomCapybara = when (Random.nextInt(5)) {
+                    randomCapybara = when (Random.nextInt(4)) {
                         0 -> R.drawable.capybara_01
                         1 -> R.drawable.capybara_daily_01
-                        else -> R.drawable.capybara_daily_02
+                        2 -> R.drawable.capybara_daily_02
+                        else-> R.drawable.capybara_daily_03
 
                     }
                     Toast.makeText(this, "Ganhaste uma capivara Daily!", Toast.LENGTH_LONG).show()
                 }
 
                 if (categoriaAleatoria >= 6 && categoriaAleatoria <= 35) { // COMMON
-                    randomCapybara = when (Random.nextInt(8)) {
+                    randomCapybara = when (Random.nextInt(10)) {
                         0 -> R.drawable.capybara_01
                         1 -> R.drawable.capybara_comum_01
                         2 -> R.drawable.capybara_comum_02
@@ -281,7 +288,9 @@ class VendingActivity : AppCompatActivity() {
                         4 -> R.drawable.capybara_comum_04
                         5 -> R.drawable.capybara_comum_05
                         6 -> R.drawable.capybara_comum_06
-                        else -> R.drawable.capybara_comum_07
+                        7 -> R.drawable.capybara_comum_07
+                        8 -> R.drawable.capybara_comum_08
+                        else-> R.drawable.capybara_comum_09
                     }
                     Toast.makeText(this, "Ganhaste uma capivara Common!", Toast.LENGTH_LONG).show()
                 }

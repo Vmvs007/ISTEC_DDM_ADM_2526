@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/capybara_yellow"
+    android:orientation="vertical"
+    tools:context=".VendingActivity">
+
+    <LinearLayout
+        android:id="@+id/layout_top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/capybara_purple"
+        android:orientation="horizontal"
+        android:paddingTop="65dp"
+        android:paddingBottom="10dp">
+
+        <TextView
+            android:id="@+id/text_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/bangers"
+            android:gravity="center"
+            android:text="ttv_joaozinho"
+            android:textColor="@color/white"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/text_credits"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/bangers"
+            android:gravity="center"
+            android:text="200 C"
+            android:textColor="@color/capybara_yellow"
+
+            android:textSize="30sp" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/image_capybara"
+        android:layout_width="300dp"
+        android:layout_height="500dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="75dp"
+        android:layout_marginBottom="75dp"
+        app:srcCompat="@drawable/vending_machine" />
+
+
+    <LinearLayout
+        android:id="@+id/layout_buttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button_daily"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="5dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/button_blue"
+            android:fontFamily="sans-serif-black"
+            android:padding="15dp"
+            android:text="DAILY"
+            android:textSize="22sp"
+            android:textStyle="italic" />
+
+
+        <Button
+            android:id="@+id/button_common"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/button_green"
+            android:text="20 C"
+            android:padding="15dp"
+            android:textSize="22sp"
+            android:fontFamily="sans-serif-black"
+            android:textStyle="italic"/>
+
+
+        <Button
+            android:id="@+id/button_rare"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/button_red"
+            android:text="100 C"
+            android:padding="15dp"
+            android:textSize="22sp"
+            android:fontFamily="sans-serif-black"
+            android:textStyle="italic"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>

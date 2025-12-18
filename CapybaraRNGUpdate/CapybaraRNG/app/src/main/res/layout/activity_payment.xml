@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/capybara_purple"
+    tools:context=".PaymentActivity">
+
+    <TextView
+        android:id="@+id/text_instrucoes_pagamento"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Insira o montante e método de pagamento"
+        android:layout_marginTop="75dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:fontFamily="@font/bangers"
+        android:textSize="30dp"/>
+
+    <EditText
+        android:id="@+id/edit_creditos_comprados"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="50dp"
+        android:backgroundTint="@color/white"
+        android:hint="Créditos desejados"
+        android:textColorHint="@color/hint_purple"
+        android:textColor="@color/white"
+        android:inputType="number"/>
+
+    <LinearLayout
+        android:id="@+id/layout_payment_options_01"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="50dp">
+
+
+        <ImageView
+            android:id="@+id/image_paypal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/paypal_logo" />
+
+
+        <ImageView
+            android:id="@+id/image_mbway"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="20dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/mbway_logo" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_payment_options_02"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:orientation="horizontal">
+
+
+        <ImageView
+            android:id="@+id/image_visa"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/visa_logo" />
+
+
+        <ImageView
+            android:id="@+id/image_paysafecard"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="20dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/paysafe_logo" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/text_total_pago"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text=""
+        android:textColor="@color/white"
+        android:fontFamily="@font/bangers"
+        android:gravity="center"
+        android:textSize="50dp"/>
+
+</LinearLayout>
